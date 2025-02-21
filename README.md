@@ -2,7 +2,7 @@
 
 A web service that maintains a dedicated connection to your Postgres database for emergency connection termination. Perfect for those moments when you hit connection limits and can't even connect to fix the problem.
 
-![1740134952024](image/README/1740134952024.png)
+![1740135128470](image/README/1740135128470.png)
 
 ## The Problem
 
