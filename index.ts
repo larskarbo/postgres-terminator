@@ -9,6 +9,10 @@ interface PostgresError {
 // Reserve a dedicated connection for terminating other connections
 const terminator = await sql.reserve();
 
+await terminator`
+  SET application_name = 'postgres-terminator';
+`;
+
 const POSTGRES_URL = process.env.POSTGRES_URL;
 const SECRET_KEY = process.env.SECRET_KEY;
 
