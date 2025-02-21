@@ -21,7 +21,7 @@ if (!POSTGRES_URL || !SECRET_KEY) {
 }
 
 const server = Bun.serve({
-  port: 3493,
+  port: process.env.PORT || 3493,
   async fetch(req) {
     const url = new URL(req.url);
 
